@@ -144,6 +144,10 @@ void commands::init(std::string signal, std::string config){
     if(signal == "mute" || signal == "unmute"){
         commandMuteUnmute();
     }
+    //Youtube
+    if(signal == "youtube"){
+        commandYoutube();
+    }
     
     //If method isn't found
     if(valid == false){
@@ -364,14 +368,19 @@ void commands::commandMuteUnmute(){
     valid = 1;
 }
 
-//Get volume   {"jsonrpc":"2.0","method":"Application.GetProperties","params":{"properties":["volume"]}, id": 1}
+//Youtube command
+void commands::commandYoutube(){
+    sendSignal("{\"jsonrpc\": \"2.0\",\"method\": \"Addons.ExecuteAddon\",\"params\": {\"wait\": false,\"addonid\": \"plugin.video.youtube\"},\"id\": 1}", 1);
+    valid = 1;
+}
 
+//Get volume   {"jsonrpc":"2.0","method":"Application.GetProperties","params":{"properties":["volume"]}, id": 1}
 
 // {"jsonrpc": "2.0", "method": "GUI.ActivateWindow", "params": {"window": "video", "parameters": [ "MovieTitles" ]}}
 
 //Get addons {"jsonrpc": "2.0", "method": "Addons.GetAddons", "id": 0}
 //Youtube id-> plugin.video.youtube
 
-// {"jsonrpc": "2.0", "method": "GUI.ActivateWindow", "params": {"window": "videofiles"}}
+// {"jsonrpc": "2.0", "method": "GUI.ActivateWindow", "params": {"window": "plugin.video.youtube"}}
 // Video 10006
 // ActivateWindow(Videos,MovieTitles)

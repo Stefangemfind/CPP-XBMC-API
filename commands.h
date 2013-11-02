@@ -29,6 +29,7 @@ private:
     void commandVolumeUp();
     void commandVolumeDown();
     void commandMuteUnmute();
+    void commandYoutube();
     
     bool valid;
     std::string curlResponse;
