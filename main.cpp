@@ -12,11 +12,11 @@ int main(int argc, char* argv[]){
     
     //Syntax check
     if(argc != 3){
-        cout << "Syntax error" << endl << "Syntax: " << argv[0] << " <signal> <config file>" << endl;
+        cout << "Syntax error" << endl << "Syntax: " << argv[0] << " <config file> <signal>" << endl;
         exit(0);
     }else{
-        signal = argv[1];
-        config = argv[2];
+        config = argv[1];
+        signal = argv[2];
     }
 
     commands c;
