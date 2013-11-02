@@ -14,7 +14,6 @@ I found it difficult to find any information on how utilize the XBMC API using c
 <b>Signal:</b> Any of the commands listed below.
 
 <b>Signals:</b><br />
-
 <b>play</b> - Play the media currently active in the player.<br />
 <b>pause</b> - Pause the media currently active in the player.<br />
 <b>stop</b> - Stop the media currently active in the player.<br />
