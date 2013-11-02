@@ -13,6 +13,7 @@ public:
 
 private:
     std::string getURLBase();
+    int screenSaverActive();
     void sendSignal(std::string, int);
     void commandPlayPause();
     void commandSelect();

@@ -11,6 +11,11 @@ void commands::init(std::string signal, std::string config){
     c.setConfig(config);
     valid = false;
     
+    //Check is screen is sleeping, is it is, wake it up
+    if(screenSaverActive() == 1){
+        commandUp(1);
+    }
+    
     //Play/Pause
     if(signal == "play" || signal == "pause"){
         commandPlayPause();
@@ -145,6 +150,22 @@ void commands::init(std::string signal, std::string config){
         cout << "No matching method found for: " << signal << endl;
     }
     
+}
+
+//Check is screensaver is running
+int commands::screenSaverActive(){
+    int running = 0;
+    std::string active;
+    
+    sendSignal("{\"jsonrpc\": \"2.0\", \"method\": \"XBMC.GetInfoBooleans\", \"params\": { \"booleans\": [\"System.ScreenSaverActive \"] }, \"id\": 1}", 1);
+    active = curlResponse.substr(62, curlResponse.length() - 62);
+    active = active.substr(0, active.length() - 2);
+    
+    if(active == "true"){
+        running = 1;
+    }
+    
+    return running;
 }
 
 //Get the base URL for the XBMC API
