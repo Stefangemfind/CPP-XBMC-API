@@ -50,4 +50,4 @@ I found it difficult to find any information on how utilize the XBMC API using c
 <b>unmute</b> - Unmute sound.<br />
 <b>youtube</b> - Go to Youtube add-on.<br />
 <b>seek_forward</b> - Seek forward 30 seconds.<br />
-<b>seek_backward</b> - Seek backwards 30 seconds.<br />
+<b>seek_backward</b> - Seek backward 30 seconds.<br />
