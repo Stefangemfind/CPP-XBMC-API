@@ -8,10 +8,10 @@ The project is meant to be a hobby project for myself, so I will not be providin
 
 I found it difficult to find any information on how utilize the XBMC API using c++ so feel free to use my code as a base for your own project.
 
-Basic syntax: ./xbmcremote <config file> <signal>
+Basic syntax: ./xbmcremote "config file" "signal"
 
-<config file>: The path the settings.ini containing your XBMC information.
-<signal>: Any of the commands listed below.
+Config file: The path the settings.ini containing your XBMC information.
+Signal: Any of the commands listed below.
 
 Signals:
 
