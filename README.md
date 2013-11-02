@@ -10,45 +10,45 @@ I found it difficult to find any information on how utilize the XBMC API using c
 
 Basic syntax: ./xbmcremote "config file" "signal"
 
-Config file: The path the settings.ini containing your XBMC information.
-Signal: Any of the commands listed below.
+<b>Config file:</b> The path the settings.ini containing your XBMC information.
+<b>Signal:</b> Any of the commands listed below.
 
-Signals:
+<b>Signals:</b><br />
 
-play            Play the media currently active in the player.
-pause           Pause the media currently active in the player.
-stop            Stop the media currently active in the player.
-select          Select the current menu item.
-back            Go back in menu 1 step.
-home            Go to home screen.
-up_1            Navigate up 1 time.
-up_2            Navigate up 2 times.
-up_3            Navigate up 3 times.
-up_4            Navigate up 4 times.
-up_5            Navigate up 5 times.
-up_6            Navigate up 6 times.
-up_7            Navigate up 7 times.
-up_8            Navigate up 8 times.
-up_9            Navigate up 9 times.
-up_10           Navigate up 10 times.
-down_1          Navigate down 1 time.
-down_2          Navigate down 2 times.
-down_3          Navigate down 3 times.
-down_4          Navigate down 4 times.
-down_5          Navigate down 5 times.
-down_6          Navigate down 6 times.
-down_7          Navigate down 7 times.
-down_8          Navigate down 8 times.
-down_9          Navigate down 9 times.
-down_10         Navigate down 10 times.
-left            Navigate left.
-right           Navigate right.
-movies          Go to the "Movies" title screen.
-tvshows         Go to the "TV Shows" title screen.
-volume_up       Increate volume by 3.
-volume_down     Decrease volume by 3.
-mute            Mute sound.
-unmute          Unmute sound.
-youtube         Go to Youtube add-on.
-seek_forward    Seek forward 30 seconds.
-seek_backward   Seek backwards 30 seconds.
+<b>play</b>            Play the media currently active in the player.<br />
+<b>pause</b>           Pause the media currently active in the player.<br />
+<b>stop</b>            Stop the media currently active in the player.<br />
+<b>select</b>          Select the current menu item.<br />
+<b>back</b>            Go back in menu 1 step.<br />
+<b>home</b>            Go to home screen.<br />
+<b>up_1</b>            Navigate up 1 time.<br />
+<b>up_2</b>            Navigate up 2 times.<br />
+<b>up_3</b>            Navigate up 3 times.<br />
+<b>up_4</b>            Navigate up 4 times.<br />
+<b>up_5</b>            Navigate up 5 times.<br />
+<b>up_6</b>            Navigate up 6 times.<br />
+<b>up_7</b>            Navigate up 7 times.<br />
+<b>up_8</b>            Navigate up 8 times.<br />
+<b>up_9</b>            Navigate up 9 times.<br />
+<b>up_10</b>           Navigate up 10 times.<br />
+<b>down_1</b>          Navigate down 1 time.<br />
+<b>down_2</b>          Navigate down 2 times.<br />
+<b>down_3</b>          Navigate down 3 times.<br />
+<b>down_4</b>          Navigate down 4 times.<br />
+<b>down_5</b>          Navigate down 5 times.<br />
+<b>down_6</b>          Navigate down 6 times.<br />
+<b>down_7</b>          Navigate down 7 times.<br />
+<b>down_8</b>          Navigate down 8 times.<br />
+<b>down_9</b>          Navigate down 9 times.<br />
+<b>down_10</b>         Navigate down 10 times.<br />
+<b>left</b>            Navigate left.<br />
+<b>right</b>           Navigate right.<br />
+<b>movies</b>          Go to the "Movies" title screen.<br />
+<b>tvshows</b>         Go to the "TV Shows" title screen.<br />
+<b>volume_up</b>       Increate volume by 3.<br />
+<b>volume_down</b>     Decrease volume by 3.<br />
+<b>mute</b>            Mute sound.<br />
+<b>unmute</b>          Unmute sound.<br />
+<b>youtube</b>         Go to Youtube add-on.<br />
+<b>seek_forward</b>    Seek forward 30 seconds.<br />
+<b>seek_backward</b>   Seek backwards 30 seconds.<br />
