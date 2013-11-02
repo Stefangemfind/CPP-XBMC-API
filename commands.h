@@ -30,6 +30,8 @@ private:
     void commandVolumeDown();
     void commandMuteUnmute();
     void commandYoutube();
+    void commandSeekForward();
+    void commandSeekBackward();
     
     bool valid;
     std::string curlResponse;

@@ -148,7 +148,14 @@ void commands::init(std::string signal, std::string config){
     if(signal == "youtube"){
         commandYoutube();
     }
-    
+    //Seek forward
+    if(signal == "seek_forward"){
+        commandSeekForward();
+    }
+    //Seek backward
+    if(signal == "seek_backward"){
+        commandSeekBackward();
+    }
     //If method isn't found
     if(valid == false){
         cout << "No matching method found for: " << signal << endl;
@@ -371,6 +378,18 @@ void commands::commandMuteUnmute(){
 //Youtube command
 void commands::commandYoutube(){
     sendSignal("{\"jsonrpc\": \"2.0\",\"method\": \"Addons.ExecuteAddon\",\"params\": {\"wait\": false,\"addonid\": \"plugin.video.youtube\"},\"id\": 1}", 1);
+    valid = 1;
+}
+
+//Seek forward command
+void commands::commandSeekForward(){
+    sendSignal("{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"Player.Seek\",\"params\":{\"playerid\":1,\"value\":\"smallforward\"}}", 1);
+    valid = 1;
+}
+
+//Seek backward command
+void commands::commandSeekBackward(){
+    sendSignal("{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"Player.Seek\",\"params\":{\"playerid\":1,\"value\":\"smallbackward\"}}", 1);
     valid = 1;
 }
 
